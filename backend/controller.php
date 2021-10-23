@@ -195,13 +195,13 @@ function getFeed($id): array
 
 function getGameInfo($id): array
 {
-    $sql = 'SELECT * FROM game WHERE id = :id;';
+    $sql = 'SELECT id, name, description, banner, price::numeric FROM game WHERE id = :id;';
     return query($sql, [":id" => [$id, PDO::PARAM_INT]])[0];
 }
 
 function getGameDlc($id): array
 {
-    $sql = 'SELECT id, name, price FROM dlc WHERE game_id = :id;';
+    $sql = 'SELECT id, name, price::numeric FROM dlc WHERE game_id = :id;';
     return query($sql, [":id" => [$id, PDO::PARAM_INT]]);
 }
 

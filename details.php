@@ -59,7 +59,7 @@ include "./backend/controller.php";
                                 <div class="d-lg-flex align-items-center mt-4">
                                     <form enctype="multipart/form-data" action="./services/edit-game.php?id=<?=$_GET['id']?>" method="post">
                                         <input id="name" name="name" type="text" value="<?=$game_info['name']?>">
-                                        <input style="width: 80px;" id="price" name="price" type="number" value="<?=str_replace('$','', $game_info['price'])?>">
+                                        <input style="width: 80px;" id="price" name="price" type="number" value="<?=$game_info['price']?>">
                                         <input style="width: 300px;" id="description" name="description" type="text" value="<?=$game_info['description']?>">
                                         <input name="userfile" type="file"/>
                                         <button type="submit" class="btn btn-sm btn-outline-primary">Edit</button>
@@ -140,7 +140,7 @@ include "./backend/controller.php";
                                                     <div class="d-flex align-items-center">
                                                         <form action="./services/edit-dlc.php?id=<?=$_GET['id']?>&dlc_id=<?=$dlc['id']?>" method="post">
                                                             <input style="width: 170px;" id="name" name="name" type="text" value="<?=$dlc['name']?>">
-                                                            <input style="width: 60px;" id="price" name="price" type="number" value="<?=str_replace('$','', $dlc['price'])?>">
+                                                            <input style="width: 60px;" id="price" name="price" type="number" value="<?=$dlc['price']?>">
                                                             <button type="submit" class="btn btn-sm btn-outline-primary">Edit</button>
                                                         </form>
                                                         &nbsp;

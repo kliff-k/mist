@@ -77,7 +77,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="./logout.php">
+                                <a class="dropdown-item" href="./services/logout.php">
                                     <i class="me-2 icon-xxs dropdown-item-icon" data-feather="power"></i>Sign Out
                                 </a>
                             </li>

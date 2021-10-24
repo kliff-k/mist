@@ -57,9 +57,9 @@ include "./backend/controller.php";
                                 <input type="text" id="name" class="form-control" name="name" placeholder="Title" required="">
                                 <label for="description" class="form-label">Description</label>
                                 <input type="text" id="description" class="form-control" name="description" placeholder="Description" required="">
-                                <label for="price" class="form-label">User Name</label>
+                                <label for="price" class="form-label">Price</label>
                                 <input type="number" id="price" class="form-control" name="price" placeholder="Price" required="">
-                                <label for="username" class="form-label">User Name</label><br>
+                                <label for="username" class="form-label">Banner</label><br>
                                 <input name="userfile" type="file"/>
                         </div>
                       </div>
